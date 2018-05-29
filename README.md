@@ -27,7 +27,7 @@ By default NodeBB doesn't have such templates. But it does mock with images in s
 Well, what if you'd like to customize the output somehow? There is no way to do that by default in NodeBB. And that's why this plugin has been created. Now you gain full control of produced HTML code for images. Just imagine what you can do now.
 Please, take a look at another template example:
 ```handlebars
-<a class="fancybox gallery-{{postData.pid}}" href="{{protocol}}://i.imgur.com/{{filename}}.{{ext}}" target="_blank">
+<a class="fancybox gallery-{{postData.pid}}" href="{{protocol}}://i.imgur.com/{{filename}}.{{ext}}">
   <picture>
     <source srcset="{{protocol}}://i.imgur.com/{{filename}}t.{{ext}}" media="(max-width: 280px)">
     <source srcset="{{protocol}}://i.imgur.com/{{filename}}m.{{ext}}" media="(max-width: 320px)">

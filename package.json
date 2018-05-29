@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-imgur-preview",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Imgur Upload Plugin with support for custom templates for thumbnails",
   "main": "index.js",
   "repository": {

@@ -56,7 +56,6 @@ function recompileTemplate(callback) {
 
 function parser(data, callback) {
   let content = (data && data.postData && data.postData.content) || data
-  console.info('content":', content)
   if (!data)
     return callback(null, data)
 

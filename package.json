@@ -1,0 +1,33 @@
+{
+  "name": "nodebb-plugin-imgur-preview",
+  "version": "2.0.0",
+  "description": "Imgur Upload Plugin with support for custom templates for thumbnails",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MegaGM/nodebb-plugin-imgur-preview.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "imgur",
+    "custom",
+    "template"
+  ],
+  "contributors": [
+    "Baris Usakli <baris@designcreateplay.com>",
+    "Mega <Aza.Noriega@gmail.com>"
+  ],
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "request": "^2.48.0",
+    "winston": "~0.8.3"
+  },
+  "nbbpm": {
+    "compatibility": "^1.5.0 || ^1.6.0 || ^1.7.0 || ^1.8.0 || ^1.9.0"
+  }
+}

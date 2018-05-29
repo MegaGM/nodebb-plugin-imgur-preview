@@ -1,0 +1,23 @@
+{
+  "id": "nodebb-plugin-imgur-preview",
+  "name": "Imgur Upload Plugin with support for custom templates for thumbnails",
+  "description": "Imgur Upload Plugin with support for custom templates for thumbnails",
+  "url": "",
+  "library": "./index.js",
+  "staticDirs": {
+    "imgur": "public",
+    "img": "public/img"
+  },
+  "scripts": [
+    "public/js/intopic.js"
+  ],
+  "hooks": [
+    { "hook": "static:app.load", "method": "init" },
+    { "hook": "filter:admin.header.build", "method": "menu" },
+    { "hook": "filter:uploadImage", "method": "upload", "priority": 6 },
+    { "hook": "filter:parse.post", "method": "parsePost", "priority": 7 },
+    { "hook": "filter:parse.raw", "method": "parseRaw", "priority": 7 }
+  ],
+  "templates": "./public/templates",
+  "settingsRoute": "/admin/plugins/imgur-preview"
+}
